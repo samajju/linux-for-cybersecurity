@@ -88,8 +88,9 @@ function calculateScore() {
     let percentage = (score / 5) * 100;
     let resultText = "Your Score: " + score + "/5 (" + percentage + "%)<br>";
 
-    if (percentage >= 70) {
-        resultText += "<b style='color:lightgreen;'>Status: PASS ✅</b>";
+   if (percentage >= 70) {
+    result.innerHTML = "Your Score: " + score + "/5 (" + percentage + "%)<br><b style='color:lightgreen;'>PASS ✅</b><br><br><a href='../certificate.html' style='color:#38bdf8;'>Request Certificate</a>";
+}
     } else {
         resultText += "<b style='color:red;'>Status: FAIL ❌</b>";
     }
