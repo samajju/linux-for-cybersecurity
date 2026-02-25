@@ -32,11 +32,11 @@
 </head>
 <body>
 
-<h1>Lesson 3: Linux File System & Navigation</h1>
+<h1>Lesson 3: File System & Basic Commands</h1>
 
 <div class="box">
-<h2>Understanding Linux File System</h2>
-<p>Linux uses a hierarchical file structure starting from the root directory:</p>
+<h2>Linux File System Structure</h2>
+<p>Linux uses a hierarchical file system starting from the root directory:</p>
 <code>/</code>
 
 <ul>
@@ -45,12 +45,12 @@
 <li><code>/etc</code> – Configuration files</li>
 <li><code>/var</code> – Logs and variable data</li>
 <li><code>/tmp</code> – Temporary files</li>
-<li><code>/bin</code> – Essential commands</li>
+<li><code>/bin</code> – Essential system commands</li>
 </ul>
 </div>
 
 <div class="box">
-<h2>Essential Navigation Commands</h2>
+<h2>Navigation Commands</h2>
 
 <p><code>pwd</code> – Show current directory</p>
 <p><code>ls</code> – List files</p>
@@ -68,12 +68,34 @@
 </div>
 
 <div class="box">
-<h2>Mini Challenge</h2>
-<p>Create a folder named <b>cyberlab</b> inside your home directory and create 2 files inside it.</p>
+<h2>File Operations</h2>
+
+<p><code>mkdir foldername</code> – Create directory</p>
+<p><code>touch filename</code> – Create file</p>
+<p><code>cp source destination</code> – Copy file</p>
+<p><code>mv oldname newname</code> – Move or rename file</p>
+<p><code>rm filename</code> – Delete file</p>
+<p><code>clear</code> – Clear terminal screen</p>
+
+<h3>Practice Challenge:</h3>
 
 <code>mkdir cyberlab</code><br>
 <code>cd cyberlab</code><br>
-<code>touch file1.txt file2.txt</code><br>
+<code>touch file1.txt</code><br>
+<code>cp file1.txt backup.txt</code><br>
+<code>mv backup.txt renamed.txt</code><br>
+<code>ls</code>
+
+</div>
+
+<div class="box">
+<h2>Mini Real-World Scenario</h2>
+<p>You are organizing security logs. Create a folder named <b>logs</b>, create 3 files inside it, and rename one file.</p>
+
+<code>mkdir logs</code><br>
+<code>cd logs</code><br>
+<code>touch log1.txt log2.txt log3.txt</code><br>
+<code>mv log3.txt system_log.txt</code><br>
 <code>ls</code>
 </div>
 
@@ -81,6 +103,3 @@
 <a href="lesson2.html">⬅ Previous Lesson</a> |
 <a href="../module1.html">Back to Module</a>
 </p>
-
-</body>
-</html>
